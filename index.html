@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  </head>
+
+  <body>
+
+    <input type="text" class="output">
+
+    <table>
+      <tr>
+        <td><input type="button" onclick="cease()" value="C"></td>
+        <td><input type="button" onclick="show('(')" value="("></td>
+        <td><input type="button" onclick="show(')')" value=")"></td>
+        <td><input type="button" onclick="cease()" value="C"></td>
+      </tr>
+      <tr>
+        <td><input type="button" onclick="show('7')" value="7"></td>
+        <td><input type="button" onclick="show('8')" value="8"></td>
+        <td><input type="button" onclick="show('9')" value="9"></td>
+        <td><input type="button" onclick="show('+')" value="+"></td>
+      </tr>
+      <tr>
+        <td><input type="button" onclick="show('4')" value="4"></td>
+        <td><input type="button" onclick="show('5')" value="5"></td>
+        <td><input type="button" onclick="show('6')" value="6"></td>
+        <td><input type="button" onclick="show('-')" value="-"></td>
+      </tr>
+      <tr>
+        <td><input type="button" onclick="show('1')" value="1"></td>
+        <td><input type="button" onclick="show('2')" value="2"></td>
+        <td><input type="button" onclick="show('3')" value="3"></td>
+        <td><input type="button" onclick="show('*')" value="&times;"></td>
+      </tr>
+      <tr>
+        <td><input type="button" onclick="show('0')" value="0"></td>
+        <td><input type="button" onclick="show('.')" value="."></td>
+        <td><input type="button" onclick="show('/')" value="&div;"></td>
+        <td><input type="button" onclick="result()" value="="></td>
+      </tr>
+    </table>
+
+    <input class="save" type="button" value="Save" onclick="save()"><br>
+    <input class="save" type="button" value="Clear" onclick="eraseList()">
+
+    <div class="record">
+
+    </div>
+
+    <script src="new.js"></script>
+  </body>
+</html>
